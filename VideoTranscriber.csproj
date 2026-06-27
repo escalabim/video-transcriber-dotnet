@@ -1,0 +1,41 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Platforms>AnyCPU;x64</Platforms>
+    <Title>video-transcriber-dotnet</Title>
+    <Description>Modern offline audio and video transcription app built with .NET 8.</Description>
+    <Copyright>MIT</Copyright>
+    <PackageProjectUrl>https://github.com/escalabim/video-transcriber-dotnet</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/escalabim/video-transcriber-dotnet</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <AssemblyVersion>1.0.0</AssemblyVersion>
+    <PackageIcon>icon_video_to_text.png</PackageIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="icon_video_to_text_win32.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Vosk" Version="0.3.38" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="ffmpeg\ffmpeg.exe">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="icon_video_to_text.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Update="model\vosk-model-pt\**\*">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
