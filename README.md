@@ -41,7 +41,7 @@ Para compilar e executar o projeto, você precisará ter instalado em sua máqui
    Aperte `F5` ou clique em "Start" no Visual Studio.
    > **Nota:** No primeiro uso, a aplicação fará automaticamente o download do FFmpeg (executável) e do modelo leve do Vosk para o idioma Português (aprox. 50MB no total) para dentro da pasta do projeto.
 
-## 🛠️ Como Executar diretamenta o progranma da pasta
+## 🛠️ Como Executar diretamente o programa da pasta
 
    > Baixe o arquivo start.zip, extraia para uma pasta e execute VideoTranscriber.exe 
 
