@@ -42,7 +42,7 @@ Para compilar e executar o projeto, você precisará ter instalado em sua máqui
    > **Nota:** No primeiro uso, a aplicação fará automaticamente o download do FFmpeg (executável) e do modelo leve do Vosk para o idioma Português (aprox. 50MB no total) para dentro da pasta do projeto.
 
 ## 🛠️ Como Executar diretamente o programa da pasta
-
+   > Acesse este link para baixar o aquivo start.zip:  https://drive.google.com/file/d/1Jvy7WWhlUm6Xo7i3CvUd4ZGISEqlCGOy/view?usp=drive_link
    > Baixe o arquivo start.zip, extraia para uma pasta e execute VideoTranscriber.exe 
 
 ## 🧩 Arquitetura do Código
