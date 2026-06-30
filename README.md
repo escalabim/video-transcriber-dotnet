@@ -49,7 +49,7 @@ Para compilar e executar o projeto, você precisará ter instalado em sua máqui
 
 A base de código foi estruturada com serviços bem definidos:
 
-- `MainForm.cs`: A classe principal da interface gráfica. Gerencia eventos, arrastar/soltar arquivos, invoca as tarefas em *background* (`Task.Run`) e atualiza a UI (`Invoke`).
+- `MainForm.cs`: A classe principal da interface gráfica. 
 - `FFmpegService.cs`: Responsável pelo download e orquestração do executável do FFmpeg para converter a mídia de entrada em um fluxo `WAV Mono PCM de 16kHz`.
 - `VoskService.cs`: Cuida do carregamento do modelo de rede neural, leitura do arquivo WAV decodificado e transformação das frequências em texto e timestamps.
 - `ExportService.cs`: Trata a persistência da transcrição em arquivos estruturados (TXT, SRT, RTF).
